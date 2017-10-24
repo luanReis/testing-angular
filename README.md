@@ -1,12 +1,12 @@
 ## Setup
 
-Make sure you have Python installed, then execute the following command in the root folder of the project:
+Make sure you have python installed, then execute the following command in the root folder of the project:
 
-Python 3.x:
+For python 3.x:
 
 	python -m http.server
 
-or Python 2.x:
+or, for python 2.x:
 
 	python -m SimpleHTTPServer
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing AngularJS 1.x</title>
+	<!-- App dependencies -->
+	<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="../node_modules/angular-resource/angular-resource.js"></script>
+	<script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
+
+	<!-- App modules -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/route-config.js"></script>
+	<script type="text/javascript" src="js/controllers/EventController.js"></script>
+	<script type="text/javascript" src="js/services/eventData.js"></script>
+	<script type="text/javascript" src="js/directives/eventThumbnail.js"></script>
+	<script type="text/javascript" src="js/filters/language.js"></script>
+</head>
+<body ng-app="eventsApp">
+
+	<div ng-view></div>
+
+</body>
+</html>

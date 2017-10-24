@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Rails Girls",
+    "address": "123 Ruby St",
+    "date": "1/1/2020",
+    "time": "9:00",
+    "language": "ruby"
+  },
+  {
+    "id": 2,
+    "name": "PyCon",
+    "address": "456 Python St",
+    "date": "2/2/2020",
+    "time": "10:00",
+    "language": "python"
+  },
+  {
+    "id": 3,
+    "name": "ReactEurope",
+    "address": "789 Facebook St",
+    "date": "3/3/2020",
+    "time": "10:00",
+    "language": "javascript"
+  },
+  {
+    "id": 4,
+    "name": "ng-conf",
+    "address": "000 Google St",
+    "date": "4/4/2020",
+    "time": "9:30",
+    "language": "javascript"
+  },
+  {
+    "id": 5,
+    "name": "JavaOne",
+    "address": "999 Oracle St",
+    "date": "5/5/2020",
+    "time": "9:00",
+    "language": "java"
+  }
+]

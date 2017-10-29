@@ -29,8 +29,8 @@ describe('eventThumbnail', function() {
 
 	}));
 
-	it('should bind the data', function() {
-		expect(el.text()).toContain('Rails Girls');
+	it('should bind the conference name', function() {
+		expect(el.text()).to.contain('Rails Girls');
 	});
 });
 

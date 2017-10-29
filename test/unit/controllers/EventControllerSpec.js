@@ -12,10 +12,10 @@ describe('EventController', function() {
 		mockEventData = sinon.stub({getAllEvents: function() {}});
 	}));
 
-	it('should set a name to the scope', function() {
+	it('should fetch all available conferences', function() {
 		var mockEvents = [
-			{name: 'event1'},
-			{name: 'event2'}
+			{name: 'conference1'},
+			{name: 'conference2'}
 		];
 		mockEventData.getAllEvents.returns(mockEvents);
 
@@ -24,6 +24,6 @@ describe('EventController', function() {
 			eventData: mockEventData
 		});
 
-		expect(scope.events).toBe(mockEvents);
+		expect(scope.events).to.equal(mockEvents);
 	});
 });

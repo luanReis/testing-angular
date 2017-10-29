@@ -11,18 +11,18 @@ describe('language', function() {
 	}));
 
 	it('should return nice when given ruby', function() {
-		expect(languageFilter('ruby')).toBe('Nice');
+		expect(languageFilter('ruby')).to.equal('Nice');
 	});
 
 	it('should return awesome when given python', function() {
-		expect(languageFilter('python')).toBe('Awesome!');
+		expect(languageFilter('python')).to.equal('Awesome!');
 	});
 
 	it('should return ... when given javascript', function() {
-		expect(languageFilter('javascript')).toBe('...');
+		expect(languageFilter('javascript')).to.equal('...');
 	});
 
 	it('should return great when given java', function() {
-		expect(languageFilter('java')).toBe('Great');
+		expect(languageFilter('java')).to.equal('Great');
 	});
 });

@@ -26,7 +26,7 @@ describe('eventData', function() {
 		var events = eventData.getAllEvents();
 		$httpBackend.flush();
 
-		expect(toJson(events)).toEqual(mockEvents);
+		expect(toJson(events)).to.deep.equal(mockEvents);
 
 		$httpBackend.verifyNoOutstandingExpectation();
 		$httpBackend.verifyNoOutstandingRequest();

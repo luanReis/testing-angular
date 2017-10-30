@@ -3,9 +3,9 @@
 
 	angular
 		.module('conferenceApp')
-		.filter('language', language);
+		.filter('happinessMeter', happinessMeter);
 
-	function language() {
+	function happinessMeter() {
 		return function(language) {
 			switch(language) {
 				case 'ruby':

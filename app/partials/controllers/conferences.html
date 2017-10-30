@@ -1,9 +1,21 @@
-<div>
+<style type="text/css">
+	.container {margin-top: 50px;}
+</style>
 
-	<button ng-click="showConferences()"></button>
-	<ul>
-		<li ng-repeat="conference in conferences ">
+<div class="container">		
+	
+	<div class=row>
+		<div class="col-xs-6 col-md-3">
+			<button class="btn btn-primary btn-lg " ng-click="showConferences()">Show conferences!</button>
+		</div>
+	</div>
+	
+	<hr>
+
+	<div class="row">
+		<div class="col-xs-6 col-md-3" ng-repeat="conference in conferences">
 			<conference-thumbnail conference="conference" />
-		</li>
-	</ul>
+		</div>	
+	</div>
+
 </div>

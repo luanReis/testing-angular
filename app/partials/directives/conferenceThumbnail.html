@@ -1,8 +1,10 @@
-<div>
-	<img class="thumbnail" ng-src="{{ conference.thumbnail }}" width="80px">
-	<div>{{ conference.name }}</div>
-	<div>{{ conference.date }}</div>
-	<div>{{ conference.time }}</div>
-	<div>{{ conference.address }}</div>
-	<div>{{ conference.language | language }}</div>
+<div class="thumbnail">
+	<img ng-src="{{ conference.thumbnail }}">
+	<div class="caption">
+		<p><strong>Title: </strong>{{ conference.name }}</p>
+		<p><strong>Date: </strong>{{ conference.date }}</p>
+		<p><strong>Time: </strong>{{ conference.time }}</p>
+		<p><strong>Address: </strong>{{ conference.address }}</p>
+		<p><strong>Happiness Meter: </strong>{{ conference.language | happinessMeter }}</p>
+	</div>
 </div>

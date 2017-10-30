@@ -1,16 +1,16 @@
 'use strict';
 
-describe('eventThumbnail', function() {
+describe('conferenceThumbnail', function() {
 
 	var el;
 
-	beforeEach(module('eventsApp'));
-	beforeEach(module('partials/directives/eventThumbnail.html'));
+	beforeEach(module('conferenceApp'));
+	beforeEach(module('partials/directives/conferenceThumbnail.html'));
 
 	beforeEach(inject(function($injector) {
 		var $compile = $injector.get('$compile');
 		var scope = $injector.get('$rootScope').$new();
-		scope.event = {
+		scope.conference = {
 			id: 1,
 			name: 'Rails Girls',
 			date: '1/1/2020',
@@ -21,7 +21,7 @@ describe('eventThumbnail', function() {
 			}
 		};
 
-		el = angular.element('<event-thumbnail event="event" />');
+		el = angular.element('<conference-thumbnail conference="conference" />');
 
 		$compile(el)(scope);
 		scope.$digest();

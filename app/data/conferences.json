@@ -5,7 +5,8 @@
     "address": "123 Ruby St",
     "date": "1/1/2020",
     "time": "9:00",
-    "language": "ruby"
+    "language": "ruby",
+    "thumbnail": "assets/railsgirls.png"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "address": "456 Python St",
     "date": "2/2/2020",
     "time": "10:00",
-    "language": "python"
+    "language": "python",
+    "thumbnail": "assets/pycon.jpg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "address": "789 Facebook St",
     "date": "3/3/2020",
     "time": "10:00",
-    "language": "javascript"
+    "language": "javascript",
+    "thumbnail": "assets/reacteurope.png"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "address": "000 Google St",
     "date": "4/4/2020",
     "time": "9:30",
-    "language": "javascript"
+    "language": "javascript",
+    "thumbnail": "assets/ng-conf.jpg"
   },
   {
     "id": 5,
@@ -37,6 +41,7 @@
     "address": "999 Oracle St",
     "date": "5/5/2020",
     "time": "9:00",
-    "language": "java"
+    "language": "java",
+    "thumbnail": "assets/javaone.png"
   }
 ]

@@ -4,7 +4,7 @@ describe('language', function() {
 	
 	var languageFilter;
 
-	beforeEach(module('eventsApp'));
+	beforeEach(module('conferenceApp'));
 
 	beforeEach(inject(function($injector) {
 		languageFilter = $injector.get('languageFilter');

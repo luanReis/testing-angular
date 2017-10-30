@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('eventsApp', [
+	angular.module('conferenceApp', [
 		'ngResource', 
 		'ngRoute'
 	]);

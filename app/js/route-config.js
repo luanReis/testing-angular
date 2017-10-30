@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('eventsApp')
+		.module('conferenceApp')
 		.config(routes);
 
 	routes.$inject = ['$routeProvider'];
@@ -10,8 +10,8 @@
 	function routes($routeProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl: 'partials/controllers/events.html',
-				controller: 'EventController',
+				templateUrl: 'partials/controllers/conferences.html',
+				controller: 'ConferenceController',
 				controllerAs: 'vm'
 			})
 			.otherwise({redirectTo: '/'});

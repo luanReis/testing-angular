@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('eventsApp')
+		.module('conferenceApp')
 		.filter('language', language);
 
 	function language() {

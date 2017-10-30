@@ -13,7 +13,7 @@ module.exports = function(config) {
       '../node_modules/sinon/pkg/sinon.js',
       'js/**/*.js',
       'partials/**/*.html',
-      '../test/unit/**/*.js'
+      '../test/unit/**/*.spec.js'
     ],
 
     preprocessors: {

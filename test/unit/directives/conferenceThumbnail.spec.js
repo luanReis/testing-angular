@@ -15,10 +15,7 @@ describe('conferenceThumbnail', function() {
 			name: 'Rails Girls',
 			date: '1/1/2020',
 			time: '12:00',
-			location: {
-				address: 'via foo, 123',
-				city: 'IT'
-			}
+			address: 'via foo, 123'
 		};
 
 		el = angular.element('<conference-thumbnail conference="conference" />');
@@ -30,7 +27,11 @@ describe('conferenceThumbnail', function() {
 	}));
 
 	it('should bind the conference name', function() {
-		expect(el.text()).to.contain('Rails Girls');
+		expect(el.text()).to.contain('Title: Rails Girls');
+	});
+
+	it('should bind the conference address', function() {
+		expect(el.text()).to.contain('Address: via foo, 123');
 	});
 });
 

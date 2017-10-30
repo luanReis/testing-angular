@@ -31,4 +31,16 @@ describe('conferenceData', function() {
 		$httpBackend.verifyNoOutstandingExpectation();
 		$httpBackend.verifyNoOutstandingRequest();
 	});
+
+	it('should return an empty list when there are no conferences available', function() {
+		$httpBackend.when('GET', 'data/conferences.json').respond([]);
+
+		var conferences = conferenceData.getAllConferences();
+		$httpBackend.flush();
+
+		expect(toJson(conferences)).to.deep.equal([]);
+
+		$httpBackend.verifyNoOutstandingExpectation();
+		$httpBackend.verifyNoOutstandingRequest();
+	});
 });

@@ -28,4 +28,17 @@ describe('ConferenceController', function() {
 
 		expect(scope.conferences).to.equal(mockConferences);
 	});
+
+	it('should return an empty list when there are no conferences', function() {
+		mockConferenceData.getAllConferences.returns([]);
+
+		$controller('ConferenceController', {
+			$scope: scope,
+			conferenceData: mockConferenceData
+		});
+
+		scope.showConferences();
+
+		expect(scope.conferences).to.deep.equal([]);
+	});
 });

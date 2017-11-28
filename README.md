@@ -10,7 +10,7 @@ or, for python 2.x:
 
 	python -m SimpleHTTPServer
 
-Then open http://localhost:8000/app in the browswer!
+Then open http://localhost:8000/app in the browser!
 
 ## Tests
 
